@@ -1,5 +1,5 @@
 ## this code file contains the code to reproduce the numerical results and
-## and plots in Section 5.2 of the text. Please run "04_ex2_functions.R" first
+## and plots in Section 6.2 of the text. Please run "04_ex2_functions.R" first
 ## to ensure that the necessary packages and functions are loaded
 
 ## load the more packages
@@ -861,5 +861,6 @@ pdf(file = paste0("FigDesign.pdf"),   # The directory you want to save the file 
     height = 3.5) # The height of the plot in inches
 
 fig1
+
 
 dev.off()
