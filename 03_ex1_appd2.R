@@ -1,5 +1,5 @@
 ## this code file contains the code to reproduce the numerical results and
-## and plots in Section 5.1 of the text. Please run "01_ex_functions.R" first
+## and plots in Section 6.1 of the text. Please run "01_ex_functions.R" first
 ## to ensure that the necessary packages and functions are loaded
 
 ## load the more packages
@@ -18,7 +18,7 @@ progress <- function(n) setTxtProgressBar(pb, n)
 opts <- list(progress = progress)
 
 ## get matrix of beta coefficients were each row corresponds to a scenario
-## scenario 1 is the only one used in Section 5.1 of the paper
+## scenario 1 is the only one used in Section 6.1 of the paper
 betas.mat <- rbind(c(log(1.25), 0, log(1.4)-log(1.25)),
                    c(log(1.3), 0, log(1.6)-log(1.3)), 
                    c(log(1.35), 0, log(1.8)-log(1.35)))
@@ -1006,4 +1006,5 @@ stopData(read.csv(paste0("confirm_probs_H0_T5_equal_scen3_70.csv"))[, c(1, 1, 2,
          gamma.eq5, rep(0.5, 4))
 
 stopData(read.csv(paste0("confirm_probs_T5_equal_scen3_70.csv"))[, c(1, 1, 2, 2, 3, 3, 4, 4, 5)], 
+
          gamma.eq5, rep(0.5, 4))
